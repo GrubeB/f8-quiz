@@ -1,0 +1,61 @@
+<!doctype html>
+<html data-th-replace="~{fragments/layout::layout('quizzes', ~{::#content})}">
+    <div id="content">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <h2 class="ui header">
+                    Quizzes
+                </h2>
+            </div>
+            <div class="ui segment">
+                <a class="ui button" data-th-href="@{'/quizzes/new'}">New</a>
+            </div>
+        </div>
+        <div class="ui segment">
+            <table class="ui celled table">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-th-each="quiz: ${quizzes}" data-th-object="${quiz}">
+                        <td data-label="name" data-th-text="*{name}"></td>
+                        <td>
+                            <div class="ui buttons">
+                                <a class="ui button" data-th-href="@{'/quizzes/' + ${quiz.id} + '/edit'}">Edit</a>
+                                <a class="ui button" data-th-href="@{'/quizzes/' + ${quiz.id} + '/delete'}">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<!--    <div id="content">-->
+
+<!--        <form class="ui segment form"-->
+<!--              data-th-classappend="${#fields.hasErrors() ? 'error' : ''}"-->
+<!--              method="post"-->
+<!--              data-th-action="@{/quizzes}"-->
+<!--              data-th-object="${quiz}"-->
+<!--        >-->
+<!--            <div class="field"-->
+<!--                 data-th-classappend="${#fields.hasErrors('name') ? 'error' : ''}"-->
+<!--            >-->
+<!--                <input type="text" data-th-field="*{name}">-->
+<!--                <div-->
+<!--                        class="ui basic red pointing prompt label"-->
+<!--                        data-th-if="${#fields.hasErrors('name')}">-->
+
+<!--                    <p data-th-errors="*{name}"></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="field">-->
+<!--                <input class="ui button" type="submit" value="Send"/>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+</html>

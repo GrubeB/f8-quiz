@@ -1,0 +1,27 @@
+<!doctype html>
+<html data-th-replace="~{fragments/layout::layout(~{::#content})}">
+<div id="content">
+    <div class="ui segment">
+        <form class="ui form"
+              data-th-classappend="${#fields.hasErrors() ? 'error' : ''}"
+              method="post"
+              data-th-action="@{'/join'}"
+              data-th-object="${joinGame}"
+        >
+            <h4 class="ui dividing header">Join</h4>
+
+            <div class="field">
+                <label>code</label>
+                <input type="text" data-th-field="*{code}">
+            </div>
+            <div class="field">
+                <label>name</label>
+                <input type="text" data-th-field="*{name}">
+            </div>
+            <div class="field">
+                <input class="ui button" type="submit" value="Submit"/>
+            </div>
+        </form>
+    </div>
+</div>
+</html>

@@ -1,0 +1,9 @@
+
+include("core")
+include("security")
+include("shared")
+include("microservice:gateway")
+include("microservice:user-management")
+include("microservice:quiz-management")
+include("microservice:front")
+include("microservice:front2")

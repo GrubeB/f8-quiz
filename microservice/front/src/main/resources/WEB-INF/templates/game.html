@@ -1,0 +1,57 @@
+<!doctype html>
+<html data-th-replace="~{fragments/layout::layout('games', ~{::#content})}">
+<div id="content">
+    <div class="ui horizontal segments">
+        <div class="ui segment">
+            <h2 class="ui header">
+                Game
+            </h2>
+        </div>
+        <div class="ui segment">
+            <a class="ui button" data-th-href="@{'/games'}">Back</a>
+        </div>
+    </div>
+    <div class="ui segment">
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>Code</th>
+                <th>Quiz</th>
+                <th>Participants</th>
+                <th>Questions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr data-th-object="${game}">
+                <td data-label="name" data-th-text="*{quizCode}"></td>
+                <td data-label="name" data-th-text="*{quiz.name}"></td>
+                <td data-label="name" data-th-text="*{participants.size}"></td>
+                <td data-label="name" data-th-text="*{quiz.questions.size}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="ui segment">
+            <h2 class="ui header">
+                Participants
+            </h2>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>score</th>
+                <th>numberOfResponds</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr data-th-each="participant: ${participants}" data-th-object="${participant}">
+                <td data-label="name" data-th-text="*{name}"></td>
+                <td data-label="name" data-th-text="*{score.points}"></td>
+                <td data-label="name" data-th-text="*{numberOfResponds}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</html>

@@ -1,0 +1,25 @@
+version '0.0.1'
+group = 'pl.app.quiz'
+
+
+dependencies {
+    implementation project(':core')
+    implementation project(':shared')
+    implementation "org.mapstruct:mapstruct:$MAPSTRUCT_VERSION"
+    annotationProcessor "org.mapstruct:mapstruct-processor:$MAPSTRUCT_VERSION"
+
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign:$OPENFEIGN_VERSION"
+
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+    implementation "org.springframework.boot:spring-boot-starter-validation"
+    runtimeOnly "org.postgresql:postgresql"
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation "io.jsonwebtoken:jjwt-api:$JJWT_VERSION"
+    runtimeOnly "io.jsonwebtoken:jjwt-impl:$JJWT_VERSION"
+    runtimeOnly "io.jsonwebtoken:jjwt-jackson:$JJWT_VERSION"
+
+}

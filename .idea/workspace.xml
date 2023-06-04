@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01017b07-c81e-441e-8553-20d09b1aa496" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.docker/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/BaseApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/dto/CreatableDtoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/dto/DeletableDtoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/dto/FetchableAllDtoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/dto/FetchableDtoByIdApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/dto/UpdatableDtoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/entity/CreatableApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/entity/DeletableApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/entity/FetchableAllApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/entity/FetchableByIdApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/api/entity/UpdatableApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/dto/BaseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/dto/DTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/entity/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/entity/AbstractEntityRoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/entity/IdentityValueObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/exception/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/exception/AuthenticationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/exception/AuthorizationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/exception/ExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/exception/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/factory/EntityFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/mapper/DtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/mapper/DtoToEntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/mapper/EntityToDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/mapper/MapStructConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/mapper/MergeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auditing/AuditorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auditing/AuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthenticationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthenticationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthorizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthorizationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/token/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/token/TokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/token/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/token/TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/user_details/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/dto/CreatableDtoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/dto/DeletableDtoByIdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/dto/FetchableAllDtoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/dto/FetchableDtoByIdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/dto/UpdatableDtoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/entity/CreatableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/entity/DeletableByIdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/entity/FetchableAllService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/entity/FetchableByIdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/entity/SavableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/service/entity/UpdatableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/util/EntityLocationUriUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/util/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/util/MapperOptionalUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/util/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/util/model/CustomByteArrayResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/validation/Password.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/validation/PasswordConstraintValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/auth/AuthenticationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/auth/AuthenticationServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/config/OAuthFeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/GameServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/Participant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/ParticipantServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/dto/CreateGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/dto/CreateParticipant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/dto/SendRespond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/quiz/QuestionServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/quiz/QuizServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/quiz/dto/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/quiz/dto/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/quiz/dto/QuestionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/quiz/dto/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/config/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/config/security/WebSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/config/thymeleaf/ModelAndViewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/config/thymeleaf/ThymeleafConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/web/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/web/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/web/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/web/QuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/fragments/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/fragments/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/game.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/games.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/question.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/questions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/quiz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/quizzes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/start-games.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/game/GameServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/game/Participant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/game/ParticipantServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/game/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/game/dto/CreateGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/game/dto/CreateParticipant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/game/dto/SendRespond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/quiz/QuestionServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/quiz/QuizServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/quiz/dto/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/quiz/dto/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/quiz/dto/QuestionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/quiz/dto/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/config/thymeleaf/ModelAndViewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/config/thymeleaf/ThymeleafConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/web/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/web/dto/JoinGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/resources/WEB-INF/templates/end.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/resources/WEB-INF/templates/fragments/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/resources/WEB-INF/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/resources/WEB-INF/templates/question.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/front2/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/gateway/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/gateway/src/main/java/pl/app/gateway/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/config/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/config/security/WebSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/api/GameApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/api/GameApi2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/api/ParticipantApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/domain/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/domain/Participant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/domain/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/dto/CreateGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/dto/CreateParticipant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/dto/SendRespond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/repository/GameRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/repository/ParticipantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/repository/ScoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/service/GameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/service/GameServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/service/ParticipantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/game/service/ParticipantServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/api/QuestionApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/api/QuizApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/domain/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/domain/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/domain/QuestionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/domain/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/repository/QuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/repository/QuizRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/service/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/service/QuestionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/service/QuizService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/service/QuizServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/auth/api/AuthenticationApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/auth/dto/AuthenticationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/config/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/config/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/config/security/WebSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/api/UserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/dto/ChangePasswordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/dto/CreateUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/dto/UserRegisterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/factory/UserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/mappers/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice/user-management/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/auditing/AuditorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/auditing/AuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/auth/AuthenticationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/auth/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/auth/AuthenticationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/auth/AuthorizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/auth/AuthorizationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/token/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/token/TokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/token/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/token/TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/user_details/CustomDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/pl/app/core/security/user_details/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/main/java/pl/app/shared/type/Includable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/main/java/pl/app/shared/type/PermissionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/main/java/pl/app/shared/type/RoleType.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/microservice/quiz-management">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/microservice/user-management">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/microservice/front">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/microservice/front2">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="front2" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="front2" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="front2" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="quiz-management" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="quiz-management" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="quiz-management" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="user-management" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="user-management" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="microservice" type="2d1252cf:ModuleNode" />
+                <item name="user-management" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QfFpFg9NUTj1UvdbYveSmiwvbv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;W:/000Projekty/SpringBooot2/Spring-boot/f8/microservice/front2/src/main/resources/WEB-INF/templates&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.app.web" />
+      <recent name="pl.app.game.dto" />
+      <recent name="pl.app.game.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\000Projekty\SpringBooot2\Spring-boot\f8\microservice\front2\src\main\resources\WEB-INF\templates" />
+      <recent name="W:\000Projekty\SpringBooot2\Spring-boot\f8\microservice" />
+      <recent name="W:\000Projekty\SpringBooot2\Spring-boot\f8\microservice\front\src\main\resources\WEB-INF\templates" />
+      <recent name="W:\000Projekty\SpringBooot2\Spring-boot\f8\microservice\front\src\main\java\pl\app\backend\game" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.app.game.api" />
+      <recent name="pl.app.quiz.api" />
+      <recent name="pl.app.backend.game" />
+      <recent name="pl.app.backend.game.dto" />
+      <recent name="pl.app.web" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.f8 [clean]">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.app.Application" />
+      <module name="f8.microservice.quiz-management.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="f8 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="f8:microservice:front2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservice/front2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="f8:microservice:front2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservice/front2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.f8 [clean]" />
+        <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Gradle.f8:microservice:front2 [build]" />
+        <item itemvalue="Gradle.f8:microservice:front2 [clean]" />
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01017b07-c81e-441e-8553-20d09b1aa496" name="Changes" comment="" />
+      <created>1685736909988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685736909988</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

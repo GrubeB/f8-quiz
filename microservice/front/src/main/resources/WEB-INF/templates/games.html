@@ -1,0 +1,42 @@
+<!doctype html>
+<html data-th-replace="~{fragments/layout::layout('games', ~{::#content})}">
+    <div id="content">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <h2 class="ui header">
+                    Games
+                </h2>
+            </div>
+            <div class="ui segment">
+                <a class="ui button" data-th-href="@{'/games/new'}">New</a>
+            </div>
+        </div>
+        <div class="ui segment">
+            <table class="ui celled table">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Quiz</th>
+                        <th>Participants</th>
+                        <th>Ended</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-th-each="game: ${games}" data-th-object="${game}">
+                        <td data-label="name" data-th-text="*{quizCode}"></td>
+                        <td data-label="name" data-th-text="*{quiz.name}"></td>
+                        <td data-label="name" data-th-text="*{participants.size}"></td>
+                        <td data-label="name" data-th-text="*{ended}"></td>
+                        <td>
+                            <div class="ui buttons">
+                                <a class="ui button" data-th-href="@{'/games/' + ${game.id}}">Show</a>
+                                <a data-th-unless="*{ended}" class="ui button" data-th-href="@{'/games/' + ${game.id} + '/stop'}">Stop</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</html>

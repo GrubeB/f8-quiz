@@ -1,0 +1,17 @@
+<!doctype html>
+<html data-th-replace="~{fragments/layout::layout( ~{::#content})}">
+    <div id="content">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <h2 class="ui header">
+                    End game
+                </h2>
+            </div>
+        </div>
+        <div class="ui segment">
+            <h2>Quiz <span data-th-text="${game.quiz.name}"></span></h2>
+            <p>Participant: <span data-th-text="${participant.name}"></span></p>
+            <p>Score: <span data-th-text="${participant.score.points}"></span>/<span data-th-text="${scoreMax}"></span></p>
+        </div>
+    </div>
+</html>

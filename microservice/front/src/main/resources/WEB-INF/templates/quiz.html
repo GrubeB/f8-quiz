@@ -1,0 +1,65 @@
+<!doctype html>
+<html data-th-replace="~{fragments/layout::layout('quizzes', ~{::#content})}">
+<div id="content">
+    <div class="ui horizontal segments">
+        <div class="ui segment">
+            <h2 class="ui header">
+               Quiz
+            </h2>
+        </div>
+        <div class="ui segment">
+            <a class="ui button" data-th-href="@{'/quizzes'}">Back</a>
+        </div>
+    </div>
+    <div class="ui segment">
+        <form class="ui form"
+              data-th-classappend="${#fields.hasErrors() ? 'error' : ''}"
+              method="post"
+              data-th-action="@{ ${quiz.id != null}? '/quizzes/' + ${quiz.id} : '/quizzes' }"
+              data-th-object="${quiz}"
+        >
+            <h4 class="ui dividing header">Quiz</h4>
+
+            <div class="field" data-th-classappend="${#fields.hasErrors('name') ? 'error' : ''}">
+                <label>name</label>
+                <input type="text" data-th-field="*{name}">
+                <div class="ui basic red pointing prompt label"
+                     data-th-if="${#fields.hasErrors('name')}">
+                    <p data-th-errors="*{name}"></p>
+                </div>
+            </div>
+
+
+            <div>
+                <h4 class="ui header">Questions</h4>
+                <a class="ui button" data-th-href="@{'/quizzes/' + ${quiz.id} + '/questions' }">Edit Questions</a>
+            </div>
+
+            <div class="ui">
+                <table class="ui celled table">
+                    <thead>
+                    <tr><th>Context</th>
+                        <th>Type</th>
+                        <th>Category</th>
+                        <th>NumberOfPoints</th>
+                        <th>Explanation</th>
+                    </tr></thead>
+                    <tbody>
+                    <tr data-th-each="question: ${quiz.questions}" data-th-object="${question}">
+                        <td data-label="context" data-th-text="*{context}"></td>
+                        <td data-label="type" data-th-text="*{type}"></td>
+                        <td data-label="category" data-th-text="*{category}"></td>
+                        <td data-label="numberOfPoints" data-th-text="*{numberOfPoints}"></td>
+                        <td data-label="explanation" data-th-text="*{explanation}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="field">
+                <input class="ui button" type="submit" value="Submit"/>
+            </div>
+        </form>
+    </div>
+</div>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html data-th-replace="~{fragments/layout::layout('quizzes', ~{::#content})}">
+    <div id="content">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <h2 class="ui header">
+                    Questions for the "<span data-th-text="${quiz.name}"></span>" quiz
+                </h2>
+            </div>
+            <div class="ui segment">
+                <a class="ui button" data-th-href="@{'/quizzes/'+${quiz.id}+'/questions/new'}">New</a>
+                <a class="ui button" data-th-href="@{'/quizzes/'+${quiz.id} + '/edit' }">Back</a>
+            </div>
+        </div>
+        <div class="ui segment">
+            <table class="ui celled table">
+                <thead>
+                <tr><th>Context</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>NumberOfPoints</th>
+                    <th>Explanation</th>
+                    <th>Actions</th>
+                </tr></thead>
+                <tbody>
+                <tr data-th-each="question: ${questions}" data-th-object="${question}">
+                    <td data-label="context" data-th-text="*{context}"></td>
+                    <td data-label="type" data-th-text="*{type}"></td>
+                    <td data-label="category" data-th-text="*{category}"></td>
+                    <td data-label="numberOfPoints" data-th-text="*{numberOfPoints}"></td>
+                    <td data-label="explanation" data-th-text="*{explanation}"></td>
+                    <td>
+                        <div class="ui buttons">
+                            <a class="ui button" data-th-href="@{'/quizzes/' + ${quiz.id} + '/questions/' + *{id} + '/edit'}">Edit</a>
+                            <a class="ui button" data-th-href="@{'/quizzes/' + ${quiz.id} + '/questions/' + *{id} + '/delete'}">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</html>

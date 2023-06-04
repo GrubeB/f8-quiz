@@ -1,0 +1,14 @@
+
+<div data-th-fragment="main_menu(activeMenu)">
+    <ul class="ui secondary pointing menu segment">
+        <li class="item" data-th-classappend="${(activeMenu eq 'home') ? 'active' : ''}">
+            <a data-th-href="@{/}">Home</a>
+        </li>
+        <li class="item" data-th-classappend="${(activeMenu eq 'quizzes') ? 'active' : ''}">
+            <a data-th-href="@{/quizzes}">Quizzes</a>
+        </li>
+        <li class="item" data-th-classappend="${(activeMenu eq 'games') ? 'active' : ''}">
+            <a data-th-href="@{/games}">Games</a>
+        </li>
+    </ul>
+</div>

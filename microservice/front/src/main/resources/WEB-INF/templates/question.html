@@ -1,0 +1,96 @@
+<!doctype html>
+<html data-th-replace="~{fragments/layout::layout('quizzes', ~{::#content})}">
+    <div id="content">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <h2 class="ui header">
+                    Question for the "<span data-th-text="${quiz.name}"></span>" quiz
+                </h2>
+            </div>
+            <div class="ui segment">
+                <a class="ui button" data-th-href="@{'/quizzes/'+${quiz.id}+'/questions' }">Back</a>
+            </div>
+        </div>
+        <div class="ui segment">
+            <form class="ui form"
+                  data-th-classappend="${#fields.hasErrors() ? 'error' : ''}"
+                  method="post"
+                  data-th-action="@{${question.id != null}? '/quizzes/'+${quiz.id}+'/questions/' + ${question.id} : '/quizzes/'+${quiz.id}+'/questions'}"
+                  data-th-object="${question}"
+            >
+                <h4 class="ui dividing header">New question</h4>
+
+                <div class="field" data-th-classappend="${#fields.hasErrors('context') ? 'error' : ''}">
+                    <label>context</label>
+                    <input type="text" data-th-field="*{context}">
+                    <div class="ui basic red pointing prompt label"
+                         data-th-if="${#fields.hasErrors('context')}">
+                        <p data-th-errors="*{context}"></p>
+                    </div>
+                </div>
+
+                <div class="field" data-th-classappend="${#fields.hasErrors('type') ? 'error' : ''}">
+                    <label>type</label>
+                    <select class="ui fluid dropdown" data-th-field="*{type}">
+                        <option data-th-each="type : ${questionTypes}"
+                                data-th-value="${type}"
+                                data-th-text="${type}"></option>
+                    </select>
+                </div>
+
+                <div class="field" data-th-classappend="${#fields.hasErrors('category') ? 'error' : ''}">
+                    <label>category</label>
+                    <input type="text" data-th-field="*{category}">
+                    <div class="ui basic red pointing prompt label"
+                         data-th-if="${#fields.hasErrors('category')}">
+                        <p data-th-errors="*{category}"></p>
+                    </div>
+                </div>
+
+                <div class="field" data-th-classappend="${#fields.hasErrors('numberOfPoints') ? 'error' : ''}">
+                    <label>numberOfPoints</label>
+                    <input type="number" data-th-field="*{numberOfPoints}">
+                    <div class="ui basic red pointing prompt label"
+                         data-th-if="${#fields.hasErrors('numberOfPoints')}">
+                        <p data-th-errors="*{numberOfPoints}"></p>
+                    </div>
+                </div>
+
+                <div class="field" data-th-classappend="${#fields.hasErrors('explanation') ? 'error' : ''}">
+                    <label>explanation</label>
+                    <input type="text" data-th-field="*{explanation}">
+                    <div class="ui basic red pointing prompt label"
+                         data-th-if="${#fields.hasErrors('explanation')}">
+                        <p data-th-errors="*{explanation}"></p>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">Answers</h4>
+                <div class="field">
+                    <div class="two fields"
+                         data-th-each="answer, answerStat: ${question.answers}">
+
+                        <div class="field" >
+                            <input type="text" data-th-field="*{answers[__${answerStat.index}__].context}">
+                            <div class="ui basic red pointing prompt label"
+                                 data-th-if="${#fields.hasErrors('*{answers[__${answerStat.index}__].context}')}">
+                                <p data-th-errors="*{answers[__${answerStat.index}__].context}"></p>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="ui toggle checkbox">
+                                <input type="checkbox"
+                                       data-th-field="*{answers[__${answerStat.index}__].correct}">
+                                <label>correct</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="field">
+                    <input class="ui button" type="submit" value="Submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</html>

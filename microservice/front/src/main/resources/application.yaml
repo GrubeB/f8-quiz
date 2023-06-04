@@ -1,0 +1,28 @@
+server:
+    port: 9100
+
+spring:
+    thymeleaf:
+        cache: false
+    datasource:
+        url: jdbc:postgresql://localhost:5433/postgres
+        username: postgres
+        password: postgres
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+        database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+    security:
+        user:
+            name: username
+            password: password
+
+springdoc:
+    swagger-ui:
+        path: /swagger-ui.html
