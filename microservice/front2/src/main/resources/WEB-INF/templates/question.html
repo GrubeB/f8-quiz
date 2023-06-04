@@ -20,12 +20,13 @@
                 </div>
                 <h4 class="ui dividing header">Question type</h4>
                 <div class="ui segment">
-                    <h2 class="ui header" data-th-text="*{type}"></h2>
+                    <p data-th-if="${#strings.equals(question.type.toString(), 'SINGLE_CHOICE_ANSWER')}" >Single choice</p>
+                    <p data-th-unless="${#strings.equals(question.type.toString(), 'SINGLE_CHOICE_ANSWER')}" >Multiple choice</p>
                 </div>
                 <h4 class="ui dividing header">Answers</h4>
                 <div class="field">
                     <div class="two fields" data-th-each="answer, answerStat: ${question.answers}">
-                        <div class="field" style="visibility: visible" >
+                        <div class="field" style="visibility: hidden; display: none;" >
                             <input type="text" data-th-field="*{answers[__${answerStat.index}__].id}">
                         </div>
 

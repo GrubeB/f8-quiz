@@ -49,7 +49,7 @@ public class GameController {
 
     @GetMapping(path = controllerPath + "/start/{quizId}")
     String startGame(@PathVariable(required = false) Long quizId, RedirectAttributes attributes) {
-        gameServiceApi.startGame(new CreateGame(quizId));
+        gameServiceApi.create(new CreateGame(quizId));
         attributes.addFlashAttribute("toastMessage", "Success!");
         attributes.addFlashAttribute("toastClass", "success");
         return "redirect:/games";
@@ -57,7 +57,10 @@ public class GameController {
 
     @GetMapping(path = controllerPath + "/{gameId}/stop")
     String stopGame(@PathVariable(required = false) Long gameId, RedirectAttributes attributes) {
-        gameServiceApi.stopGame(gameId);
+        Game fetch = gameServiceApi.fetch(gameId);
+        fetch.setEnded(true);
+        gameServiceApi.update(gameId,fetch);
+
         attributes.addFlashAttribute("toastMessage", "Success!");
         attributes.addFlashAttribute("toastClass", "success");
         return "redirect:/games";

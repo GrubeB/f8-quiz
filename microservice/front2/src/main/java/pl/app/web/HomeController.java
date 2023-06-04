@@ -11,18 +11,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import pl.app.backend.game.Game;
+import pl.app.backend.game.dto.Game;
 import pl.app.backend.game.GameServiceApi;
-import pl.app.backend.game.Participant;
+import pl.app.backend.game.dto.Participant;
 import pl.app.backend.game.ParticipantServiceApi;
 import pl.app.backend.game.dto.CreateParticipant;
 import pl.app.backend.game.dto.SendRespond;
 import pl.app.backend.quiz.QuestionServiceApi;
-import pl.app.backend.quiz.QuizServiceApi;
 import pl.app.backend.quiz.dto.Answer;
 import pl.app.backend.quiz.dto.Question;
 import pl.app.backend.quiz.dto.QuestionType;
-import pl.app.backend.quiz.dto.Quiz;
 import pl.app.config.thymeleaf.ModelAndViewService;
 import pl.app.web.dto.JoinGame;
 
@@ -64,7 +62,7 @@ public class HomeController {
         ModelAndView model = ModelAndViewService.clean("question");
         Game game = gameServiceApi.fetch(gameId);
         Participant participant = participantServiceApi.fetch(participantId);
-        Question nextQuestion = gameServiceApi.getNextQuestion(gameId, participantId);
+        Question nextQuestion = gameServiceApi.getNextQuestion(gameId, participantId,true);
         if (nextQuestion == null) {
             return ModelAndViewService.clean("redirect:/games/" + gameId + "/participants/" + participantId + "/end");
         }
@@ -85,14 +83,18 @@ public class HomeController {
         Game game = gameServiceApi.fetch(gameId);
         Question question = questionServiceApi.fetch(game.getQuiz().getId(), questionId);
         Participant participant = participantServiceApi.fetch(participantId);
-        if(question.getType().equals(QuestionType.SINGLE_CHOICE_ANSWER) && answerIds.size() != 1){
+        if((question.getType().equals(QuestionType.SINGLE_CHOICE_ANSWER) && answerIds.size() != 1)
+        || (question.getType().equals(QuestionType.MULTIPLE_CHOICE_ANSWER) && answerIds.size() <= 1)){
             question.getAnswers().forEach(answer -> answer.setCorrect(false));
             model.addAttribute("question", question);
             model.addAttribute("game", game);
             model.addAttribute("participant", participant);
+
+            model.addAttribute("toastMessage", "Incorrect number of answers!");
+            model.addAttribute("toastClass", "error");
+
             return "question";
         }
-// TODO
 
 
         Boolean booleanResponseEntity = gameServiceApi.sendRespond(gameId, participantId, new SendRespond(questionId, answerIds));

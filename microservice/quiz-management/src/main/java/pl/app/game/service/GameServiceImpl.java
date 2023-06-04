@@ -29,22 +29,21 @@ class GameServiceImpl implements GameService {
     private final QuizService quizService;
 
     @Override
+    public void mergeEntity(Game existingEntity, Game newEntity) {
+        existingEntity.setEnded(newEntity.getEnded());
+        existingEntity.setQuizCode(newEntity.getQuizCode());
+    }
+
+    @Override
     public Game getGameByCode(String code) {
         return repository.findByQuizCodeIgnoreCase(code).orElseThrow();
     }
 
     @Override
-    public Game startGame(Long quizId) {
+    public Game create(Long quizId) {
         Quiz quiz = quizService.fetchEntityById(quizId);
         Game game = new Game(UUID.randomUUID().toString().substring(0, 5).toUpperCase(), quiz, new HashSet<>(),false);
         return repository.save(game);
-    }
-
-    @Override
-    public Game stopGame(Long gameId) {
-        Game game = repository.findById(gameId).orElseThrow();
-        game.setEnded(true);
-        return game;
     }
 
     @Override
@@ -84,12 +83,5 @@ class GameServiceImpl implements GameService {
         participant.incrementNumberOfResponds();
         participantRepository.save(participant);
         return correctAnswer;
-    }
-
-    @Override
-    public Integer getNumberOfQuestions(Long gameId) {
-        Game game = repository.findById(gameId).orElseThrow();
-        Quiz quiz = game.getQuiz();
-        return quiz.getQuestions().size();
     }
 }

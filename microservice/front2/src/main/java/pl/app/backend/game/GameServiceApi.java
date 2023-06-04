@@ -1,12 +1,11 @@
 package pl.app.backend.game;
 
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.app.backend.quiz.dto.Question;
 import pl.app.backend.game.dto.CreateGame;
+import pl.app.backend.game.dto.Game;
 import pl.app.backend.game.dto.SendRespond;
+import pl.app.backend.quiz.dto.Question;
 
 import java.util.List;
 
@@ -19,18 +18,18 @@ public interface GameServiceApi {
     @RequestMapping(path = "/api/v1/games/{id}", method = RequestMethod.GET)
     Game fetch(@PathVariable Long id);
 
+    @RequestMapping(path = "/api/v1/games/{id}", method = RequestMethod.PUT)
+    Game update(@PathVariable Long id, @RequestBody Game entity);
+
     @RequestMapping(path = "/api/v1/games", method = RequestMethod.GET)
     Game getGameByCode(@RequestParam String code);
 
     @RequestMapping(path = "/api/v1/games", method = RequestMethod.POST)
-    Game startGame(@RequestBody CreateGame dto);
+    Game create(@RequestBody CreateGame dto);
 
-    @RequestMapping(path = "/api/v1/games/{gameId}/stop", method = RequestMethod.POST)
-    Game stopGame(@PathVariable Long gameId);
+    @RequestMapping(path = "/api/v1/games/{gameId}/participants/{participantId}/questions", method = RequestMethod.GET)
+    Question getNextQuestion(@PathVariable Long gameId, @PathVariable Long participantId,@RequestParam Boolean next);
 
-    @RequestMapping(path = "/api/v1/games/{gameId}/participants/{participantId}/next-question", method = RequestMethod.GET)
-    Question getNextQuestion(@PathVariable Long gameId, @PathVariable Long participantId);
-
-    @RequestMapping(path = "/api/v1/games/{gameId}/participants/{participantId}/send-answer", method = RequestMethod.POST)
+    @RequestMapping(path = "/api/v1/games/{gameId}/participants/{participantId}/answers", method = RequestMethod.POST)
     Boolean sendRespond(@PathVariable Long gameId, @PathVariable Long participantId, @RequestBody SendRespond dto);
 }
