@@ -21,6 +21,8 @@ public class Question {
     private List< @Valid Answer> answers;
     private String explanation;
     private String category;
+    private String imageUrl;
+    private String code;
     @Min(value = 0)
     private Double numberOfPoints;
 

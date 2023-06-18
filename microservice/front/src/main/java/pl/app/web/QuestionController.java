@@ -75,6 +75,8 @@ public class QuestionController {
             existingQuestion.setExplanation(question.getExplanation());
             existingQuestion.setCategory(question.getCategory());
             existingQuestion.setNumberOfPoints(question.getNumberOfPoints());
+            existingQuestion.setCode(question.getCode());
+            existingQuestion.setImageUrl(question.getImageUrl());
             questionServiceApi.update(quizId, questionId, existingQuestion);
         } else {
             questionServiceApi.create(quizId, question);

@@ -25,6 +25,10 @@ public class Question extends AbstractEntity<Long> {
     )
     @JoinColumn(name = "question_id")
     private Set<Answer> answers;
+    @Column(name = "image_url")
+    private String imageUrl;
+    @Column(name="code", length = 102400)
+    private String code;
     private String explanation;
     private String category;
     @Column(name = "number_of_points")

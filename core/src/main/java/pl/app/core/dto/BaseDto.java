@@ -7,9 +7,9 @@ import lombok.experimental.SuperBuilder;
 import java.io.Serializable;
 
 @DTO
-@Data
 @SuperBuilder
 @NoArgsConstructor
+@AllArgsConstructor
 public class BaseDto<ID> implements Serializable {
     protected ID id;
     public ID getId() {
@@ -17,5 +17,8 @@ public class BaseDto<ID> implements Serializable {
     }
     public void setId(ID id) {
         this.id = id;
+    }
+    public static <T> BaseDtoBuilder<?, ?, ?> builder() {
+        return new BaseDtoBuilderImpl<T>();
     }
 }

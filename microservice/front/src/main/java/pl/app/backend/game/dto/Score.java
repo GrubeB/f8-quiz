@@ -1,4 +1,4 @@
-package pl.app.backend.game;
+package pl.app.backend.game.dto;
 
 
 import lombok.AllArgsConstructor;

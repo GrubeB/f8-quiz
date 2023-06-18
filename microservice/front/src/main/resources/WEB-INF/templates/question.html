@@ -22,7 +22,7 @@
 
                 <div class="field" data-th-classappend="${#fields.hasErrors('context') ? 'error' : ''}">
                     <label>context</label>
-                    <input type="text" data-th-field="*{context}">
+                    <textarea type="text" data-th-field="*{context}"></textarea>
                     <div class="ui basic red pointing prompt label"
                          data-th-if="${#fields.hasErrors('context')}">
                         <p data-th-errors="*{context}"></p>
@@ -64,6 +64,25 @@
                         <p data-th-errors="*{explanation}"></p>
                     </div>
                 </div>
+
+                <div class="field" data-th-classappend="${#fields.hasErrors('code') ? 'error' : ''}">
+                    <label>code</label>
+                    <textarea type="text" data-th-field="*{code}"  rows="4"></textarea>
+                    <div class="ui basic red pointing prompt label"
+                         data-th-if="${#fields.hasErrors('code')}">
+                        <p data-th-errors="*{code}"></p>
+                    </div>
+                </div>
+
+                <div class="field" data-th-classappend="${#fields.hasErrors('imageUrl') ? 'error' : ''}">
+                    <label>image url</label>
+                    <input type="text" data-th-field="*{imageUrl}">
+                    <div class="ui basic red pointing prompt label"
+                         data-th-if="${#fields.hasErrors('imageUrl')}">
+                        <p data-th-errors="*{imageUrl}"></p>
+                    </div>
+                </div>
+
                 <h4 class="ui dividing header">Answers</h4>
                 <div class="field">
                     <div class="two fields"

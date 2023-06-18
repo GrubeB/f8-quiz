@@ -3,6 +3,7 @@ package pl.app.quiz.service;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import pl.app.quiz.domain.Answer;
 import pl.app.quiz.domain.Question;
 import pl.app.quiz.domain.Quiz;
 import pl.app.quiz.repository.QuestionRepository;
@@ -31,22 +32,23 @@ class QuestionServiceImpl implements QuestionService {
         if (source != null) {
             target.setType(source.getType());
             target.setContext(source.getContext());
-            Set set;
+            Set<Answer> set;
             if (target.getAnswers() != null) {
                 set = source.getAnswers();
                 if (set != null) {
                     target.getAnswers().clear();
                     target.getAnswers().addAll(set);
                 } else {
-                    target.setAnswers((Set)null);
+                    target.setAnswers(null);
                 }
             } else {
                 set = source.getAnswers();
                 if (set != null) {
-                    target.setAnswers(new LinkedHashSet(set));
+                    target.setAnswers(new LinkedHashSet<Answer>(set));
                 }
             }
-
+            target.setCode(source.getCode());
+            target.setImageUrl(source.getImageUrl());
             target.setExplanation(source.getExplanation());
             target.setCategory(source.getCategory());
             target.setNumberOfPoints(source.getNumberOfPoints());

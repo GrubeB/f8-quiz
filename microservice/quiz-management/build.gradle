@@ -4,6 +4,7 @@ group = 'pl.app.quiz'
 
 dependencies {
     implementation project(':core')
+    implementation project(':security')
     implementation project(':shared')
     implementation "org.mapstruct:mapstruct:$MAPSTRUCT_VERSION"
     annotationProcessor "org.mapstruct:mapstruct-processor:$MAPSTRUCT_VERSION"
@@ -21,5 +22,7 @@ dependencies {
     implementation "io.jsonwebtoken:jjwt-api:$JJWT_VERSION"
     runtimeOnly "io.jsonwebtoken:jjwt-impl:$JJWT_VERSION"
     runtimeOnly "io.jsonwebtoken:jjwt-jackson:$JJWT_VERSION"
-
+}
+tasks.withType(JavaCompile){
+    options.compilerArgs << "-Xlint:unchecked"
 }

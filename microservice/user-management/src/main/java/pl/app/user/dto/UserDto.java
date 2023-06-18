@@ -1,7 +1,6 @@
 package pl.app.user.dto;
 
 import lombok.*;
-import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 import pl.app.core.dto.BaseDto;
 import pl.app.core.dto.DTO;

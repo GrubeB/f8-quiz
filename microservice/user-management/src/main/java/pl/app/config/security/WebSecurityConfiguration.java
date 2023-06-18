@@ -29,8 +29,8 @@ public class WebSecurityConfiguration {
                         "/api/v1/demo",
                         "/api/v1/users/register"
                 ).permitAll()
-                .requestMatchers(HttpMethod.GET,"/api/v1/users/**").hasAuthority(PermissionType.USER_VIEWER.name())
-                .requestMatchers("/api/v1/users/**").hasAuthority(PermissionType.USER_MANAGEMENT.name())
+//                .requestMatchers(HttpMethod.GET,"/api/v1/users/**").hasAuthority(PermissionType.USER_VIEWER.name())
+//                .requestMatchers("/api/v1/users/**").hasAuthority(PermissionType.USER_MANAGEMENT.name())
                 .anyRequest()
                 .authenticated();
 

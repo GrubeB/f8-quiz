@@ -3,6 +3,7 @@ package pl.app.backend.game;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import pl.app.backend.game.dto.CreateGame;
+import pl.app.backend.game.dto.Game;
 import pl.app.backend.game.dto.SendRespond;
 import pl.app.backend.quiz.dto.Question;
 

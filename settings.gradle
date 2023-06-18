@@ -1,8 +1,8 @@
 
 include("core")
-include("security")
 include("shared")
-include("microservice:gateway")
+include("security")
+
 include("microservice:user-management")
 include("microservice:quiz-management")
 include("microservice:front")

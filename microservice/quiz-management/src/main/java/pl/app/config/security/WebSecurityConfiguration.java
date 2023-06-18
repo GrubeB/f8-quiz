@@ -23,6 +23,7 @@ public class WebSecurityConfiguration {
                 .anyRequest()
                 .authenticated();
 
+        httpSecurity.cors().disable();
         httpSecurity.csrf().disable();
         httpSecurity.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
