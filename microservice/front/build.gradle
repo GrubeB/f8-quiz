@@ -3,7 +3,6 @@ group = 'pl.app.web'
 
 
 dependencies {
-    implementation project(':shared')
     implementation project(':security')
 
     implementation "org.mapstruct:mapstruct:$MAPSTRUCT_VERSION"

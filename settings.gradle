@@ -1,6 +1,5 @@
 
 include("core")
-include("shared")
 include("security")
 
 include("microservice:user-management")

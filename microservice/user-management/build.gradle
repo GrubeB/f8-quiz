@@ -5,7 +5,7 @@ group = 'pl.app.user'
 dependencies {
     implementation project(':core')
     implementation project(':security')
-    implementation project(':shared')
+
     implementation "org.mapstruct:mapstruct:$MAPSTRUCT_VERSION"
     annotationProcessor "org.mapstruct:mapstruct-processor:$MAPSTRUCT_VERSION"
 

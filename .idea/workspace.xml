@@ -5,49 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01017b07-c81e-441e-8553-20d09b1aa496" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice/front2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice/quiz-management/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice/user-management/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/dto/BaseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/pl/app/core/dto/BaseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auditing/AuditorConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auditing/AuthenticationProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthenticationConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthenticationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthenticationServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthorizationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/auth/AuthorizationServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/token/JwtAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/token/TokenConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/token/TokenService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/token/TokenServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/pl/app/core/security/user_details/CustomUserDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/dto/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/GameServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/GameServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/dto/Participant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/ParticipantServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/ParticipantServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/game/dto/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/quiz/dto/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/backend/quiz/dto/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/web/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/web/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/web/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/java/pl/app/web/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/src/main/resources/WEB-INF/templates/question.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/quiz/dto/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front2/src/main/java/pl/app/backend/quiz/dto/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/front2/src/main/resources/WEB-INF/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front2/src/main/resources/WEB-INF/templates/question.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/gateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/gateway/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/gateway/src/main/java/pl/app/gateway/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/gateway/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/front/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/front2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/front2/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice/quiz-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/quiz-management/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/config/security/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/config/security/WebSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/domain/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/service/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/service/QuestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/repository/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/quiz-management/src/main/java/pl/app/quiz/repository/QuestionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice/user-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/user-management/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/config/security/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/config/security/WebSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/user-management/src/main/java/pl/app/user/dto/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/pl/app/shared/type/Includable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/pl/app/shared/type/PermissionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/pl/app/shared/type/RoleType.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,30 +50,26 @@
         <task path="$PROJECT_DIR$/core">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/microservice">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="f8" type="f1a62948:ProjectNode" />
+                <item name="f8-quiz" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="f8" type="f1a62948:ProjectNode" />
-                <item name="core" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="f8" type="f1a62948:ProjectNode" />
-                <item name="core" type="2d1252cf:ModuleNode" />
+                <item name="f8-quiz" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="f8" type="f1a62948:ProjectNode" />
-                <item name="core" type="2d1252cf:ModuleNode" />
+                <item name="f8-quiz" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -127,16 +93,12 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -159,7 +121,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "W:/000Projekty/SpringBoot/000_F/f8/microservice/front2",
+    "last_opened_file_path": "W:/000Projekty/SpringBoot/000_F/f10-graph",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -178,11 +140,11 @@
       <recent name="pl.app.game.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\000Projekty\SpringBoot\000_F\f8\microservice\front" />
       <recent name="W:\000Projekty\SpringBoot\000_F\f8\microservice\front2" />
       <recent name="W:\000Projekty\SpringBoot\000_F\f8\microservice\user-management" />
       <recent name="W:\000Projekty\SpringBoot\000_F\f8\microservice\gateway" />
       <recent name="W:\000Projekty\SpringBoot\000_F\f8\microservice\quiz-management" />
-      <recent name="W:\000Projekty\SpringBoot\000_F\f8" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -198,42 +160,8 @@
       <recent name="pl.app.web" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.f8 [clean]">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.app.Application" />
-      <module name="f8.microservice.front2.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="f8 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="f8 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.f8-quiz [clean]">
+    <configuration name="f8-quiz [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -245,6 +173,48 @@
         <option name="taskNames">
           <list>
             <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="f8:microservice:front [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservice/front" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="f8:microservice:front2 [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservice/front2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -298,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.f8 [clean]" />
-        <item itemvalue="Gradle.f8 [build]" />
-        <item itemvalue="Gradle.f8:microservice:quiz-management [bootRun]" />
+        <item itemvalue="Gradle.f8-quiz [clean]" />
+        <item itemvalue="Gradle.f8:microservice:front [bootRun]" />
         <item itemvalue="Gradle.f8:microservice:user-management [bootRun]" />
-        <item itemvalue="Application.Application" />
+        <item itemvalue="Gradle.f8:microservice:quiz-management [bootRun]" />
+        <item itemvalue="Gradle.f8:microservice:front2 [bootRun]" />
       </list>
     </recent_temporary>
   </component>
